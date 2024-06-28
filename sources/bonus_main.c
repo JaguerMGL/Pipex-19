@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   bonus_main.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ndessard <ndessard@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 11:25:21 by ndessard          #+#    #+#             */
-/*   Updated: 2024/03/20 14:16:51 by ndessard         ###   ########.fr       */
+/*   Updated: 2024/03/20 14:21:07 by ndessard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,9 @@ int	main(int ac, char **av, char **env)
 {
 	t_data	data;
 
-	if (ac != 5)
+	if (ac < 5)
 		error(1, &data);
-	data.ac = ac - 1; 
+	data.ac = ac - 1;
 	init_value(ac, &data);
 	get_env(env, &data);
 	get_cmd(av, &data);

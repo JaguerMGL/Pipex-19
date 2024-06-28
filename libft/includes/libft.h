@@ -6,7 +6,7 @@
 /*   By: ndessard <ndessard@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 14:41:58 by ndessard          #+#    #+#             */
-/*   Updated: 2024/03/05 17:38:18 by ndessard         ###   ########.fr       */
+/*   Updated: 2024/03/19 13:04:51 by ndessard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@
 # include <stdio.h>
 # include <sys/wait.h>
 # include <sys/types.h>
+# include <sys/errno.h>
 
 // LIBFT
 
